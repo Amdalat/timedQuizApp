@@ -64,10 +64,6 @@ function submitfunc() {
             if (list[i].id == questions[value].corrans) {
                 document.getElementsByName(`q${value+1}`)[i].parentElement.style.color = 'greenyellow';
             } 
-
-            // if (!list[i].checked) {
-            //     list[i].disabled = true;
-            // }
         }         
     });
 
@@ -79,10 +75,6 @@ function submitfunc() {
     if (submitbtn) {
         submitbtn.disabled = true;
     }
-    // const allRadioButtons = document.querySelectorAll('input[type="radio"]');
-    // allRadioButtons.forEach(button => {
-    //     button.disabled = true;
-    // });
 }
 
 function timer() {
