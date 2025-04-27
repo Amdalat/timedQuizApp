@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            width: 60vh;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.384);
+            margin-inline: auto;
+            border-radius: 10px;
+        }
+        .ques{
+            padding: 5px;
+        }
+        label{
+            margin-right: 20px;
+        }
+        button{
+            border: none;
+            border-radius: 5px;
+            padding: 5px 10px;
+            margin-left: 25vh;
+            margin-top: 10px;
+        }
+        #score{
+            width: 80px;
+            height: 80px;
+            background-color: aquamarine;
+            border-radius: 100%;
+            line-height: 80px;
+            text-align: center;
+            font-size: 40px;
+            position: absolute;
+            box-shadow: 2px 2px 9px rgba(255, 255, 255, 0.717);
+            visibility: hidden;
+        }
+        #timer{
+            color: antiquewhite;
+            background-color: black;
+            border-radius: 5px;
+            place-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="score">
+            <!-- 0/4 -->
+        </div>
+        <div id="timer">
+            <h2 style="margin: 0;"></h2>
+        </div>
+        <h2 style="text-align: center;">QUIZ</h2>
+        <div id="queslist">
+            <!-- list of questions -->
+        </div>
+        <!-- js btn -->
+         <button id="start" onclick="loadques(); countdown(); this.remove()">Start</button>
+    </div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
